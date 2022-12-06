@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+float f_number;
+float s_number;
+char operation;
+float answer;
+
+printf("Enter first number:");
+scanf("%f", &f_number);
+
+printf("\nChoose the operation [+,-,*,/]:");
+scanf("%s", &operation);
+
+printf("\nEnter second number:");
+scanf("%f", &s_number);
+
+if (operation == '+')
+{
+    answer = f_number + s_number;
+    printf("Answer == %.2f", answer);
+}
+    
+else if (operation == '-')
+{
+    answer = f_number - s_number;
+    printf("Answer == %.2f", answer);
+}
+    
+else if (operation == '*')
+{
+    answer = f_number * s_number;
+    printf("Answer == %.2f", answer);
+}
+    
+else if (operation == '/')
+{
+    answer = f_number / s_number;
+    printf("Answer == %.2f", answer);
+}
+    
+else
+{
+    printf("Wrong input");
+}
+    
+return 0;
+
+}
