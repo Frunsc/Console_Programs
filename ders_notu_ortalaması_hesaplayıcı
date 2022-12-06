@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    double ortalama = 0;
+    double toplam = 0;
+    double ders_sayisi = 0;
+    double not = 0 ;
+    double kredi =0;
+    double toplam_kredi=0;
+    int i;
+
+    printf("kac tane dersin ortalamasini hesaplamak istiyorsunuz?\n");
+    printf("ders sayisi = ");
+
+    scanf("%lf",&ders_sayisi);
+
+    for( i=0; i<ders_sayisi; ++i)
+    {
+        printf("dersin kredi sayisi; ");
+        scanf("%lf",&kredi);
+        printf("100 uzerinden aldiginiz notu giriniz; ");
+        scanf("%lf",&not);
+        printf("\n\n");
+        toplam_kredi += kredi;
+        toplam =toplam + (not*kredi);
+
+    }
+
+    ortalama = toplam / toplam_kredi;
+    printf("ortalama = %.2lf",ortalama);
+
+    return 0;
+
+
+}
