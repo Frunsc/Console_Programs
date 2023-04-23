@@ -20,9 +20,7 @@ int main(){
 			yeri[x]=i+1;
 			x++;
 		}
-		else
-		{
-		}
+		
 	}
 	
 	printf("cumle icinde bulunma miktari ==> %d\n\n",x);
